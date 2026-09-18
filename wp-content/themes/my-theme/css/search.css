@@ -3,248 +3,129 @@
 ========================= */
 
 .search-page {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* =========================
-   SEARCH HEADER
-========================= */
-
-.search-result-header {
-    max-width: 100%;
-    min-height: 330px;
-
-    background: #dceee9;
-
-    padding: 45px 15% 50px;
-
+    width: 100%;
+    min-height: 300px;
     box-sizing: border-box;
+    background: #d8e9e5;
+    padding: 20px 28px 45px;
 }
 
-
-/* Title */
-
-.search-result-header h1 {
+.search-page h1 {
     margin: 0;
 
-    color: #263746;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 48px;
     font-weight: 300;
-
     line-height: 1.2;
+
+    color: #17243a;
 }
 
+.search-page hr {
+    border: 0;
+    border-top: 2px solid #879694;
 
-/* Line */
-
-.search-line {
-    width: 100%;
-
-    height: 2px;
-
-    margin: 30px 0 50px;
-
-    background: #879c98;
+    margin: 28px 0 48px;
 }
 
+.search-page > p {
+    width: 330px;
 
-/* Description */
+    margin: 0 auto 12px;
 
-.search-description {
-    max-width: 330px;
-
-    margin: 0 auto 15px;
-
-    color: #596f6b;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+    line-height: 1.5;
 
-    line-height: 1.6;
+    color: #63777b;
 }
 
-
-/* Search form */
-
-.search-result-form {
-    max-width: 330px;
-
+.search-page form {
+    width: 330px;
     margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
 }
 
-.search-result-form label {
-    display: block;
-
+.search-page form label {
     margin-bottom: 7px;
 
-    color: #263746;
-
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
+
+    color: #344b50;
 }
 
-
-/* Input + button */
-
-.search-form-row {
-    display: flex;
-
-    align-items: center;
-
-    gap: 15px;
-}
-
-.search-form-row input {
-    width: 250px;
+.search-page form input[type="search"] {
+    width: 248px;
     height: 36px;
+
+    box-sizing: border-box;
 
     padding: 0 10px;
 
-    box-sizing: border-box;
+    border: 1px solid #777;
+    border-radius: 0;
 
-    border: 1px solid #888;
+    background: #fff;
 
-    background: #ffffff;
-
-    outline: none;
-
-    font-size: 12px;
+    font-size: 13px;
+    color: #333;
 }
 
-.search-form-row input:focus {
-    border-color: #263746;
-}
-
-
-/* Search button */
-
-.search-form-row button {
+.search-page form button {
+    width: 68px;
     height: 36px;
 
-    padding: 0 18px;
+    margin-left: 262px;
+    margin-top: -36px;
 
     border: none;
+    border-radius: 0;
 
-    background: #263746;
+    background: #26374b;
+    color: white;
 
-    color: #ffffff;
-
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 600;
 
     cursor: pointer;
 }
 
-.search-form-row button:hover {
-    background: #172532;
+.search-page form button:hover {
+    background: #1d2a3a;
 }
-
 
 /* =========================
    SEARCH RESULTS
 ========================= */
 
-.search-results {
-    max-width: 620px;
-
-    margin: 55px auto;
-
-    padding: 0 20px;
-
-    text-align: center;
+.search-page article {
+    width: 330px;
+    margin: 0 auto 25px;
 }
 
-
-/* No results title */
-
-.no-results-title {
-    margin: 0 0 15px;
-
-    color: #e00035;
-
-    font-size: 18px;
-
-    font-weight: 600;
-}
-
-
-/* No results description */
-
-.no-results-text {
-    margin: 0 auto;
-
-    max-width: 400px;
-
-    color: #555;
-
-    font-size: 12px;
-
-    line-height: 1.6;
-}
-
-
-/* =========================
-   RESULT ITEM
-========================= */
-
-.search-result-item {
-    padding: 20px 0;
-
-    border-bottom: 1px solid #eeeeee;
-
-    text-align: left;
-}
-
-.search-result-item h2 {
+.search-page article h2 {
     margin: 0 0 8px;
 
-    font-size: 20px;
+    font-size: 22px;
+    font-weight: 400;
 }
 
-.search-result-item h2 a {
-    color: #263746;
-
+.search-page article h2 a {
+    color: #26374b;
     text-decoration: none;
 }
 
-.search-result-item h2 a:hover {
-    color: #e00035;
+.search-page article h2 a:hover {
+    text-decoration: underline;
 }
 
-.search-result-item p {
+.search-page article p {
     margin: 0;
 
-    color: #666;
-
     font-size: 13px;
-
     line-height: 1.6;
-}
-
-
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width: 700px) {
-
-    .search-result-header {
-        padding: 35px 25px 40px;
-    }
-
-    .search-result-header h1 {
-        font-size: 32px;
-    }
-
-    .search-line {
-        margin: 20px 0 35px;
-    }
-
-    .search-form-row {
-        gap: 8px;
-    }
-
-    .search-form-row input {
-        width: 100%;
-    }
-
+    color: #63777b;
 }
