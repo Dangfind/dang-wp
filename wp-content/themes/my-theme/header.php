@@ -40,17 +40,21 @@
         <!-- Main menu -->
         <nav class="main-menu">
 
-            <a href="#">
-                Thể thao
-            </a>
+            <?php
 
-            <a href="#">
-                Khoa học
-            </a>
+            $categories = get_categories([
+                'hide_empty' => true,
+            ]);
 
-            <a href="#">
-                Tin tức
-            </a>
+            foreach ($categories as $category) :
+
+            ?>
+
+                <a href="<?php echo get_category_link($category->term_id); ?>">
+                    <?php echo $category->name; ?>
+                </a>
+
+            <?php endforeach; ?>
 
         </nav>
 
@@ -111,7 +115,6 @@
                 </div>
 
             </div>
-            ```
 
         </div>
 

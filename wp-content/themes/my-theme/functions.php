@@ -26,6 +26,17 @@ function my_theme_enqueue_styles()
         '1.0'
     );
 }
+function my_theme_setup()
+{
 
+    register_nav_menus([
+        'primary' => 'Main Menu'
+    ]);
+}
+
+add_action(
+    'after_setup_theme',
+    'my_theme_setup'
+);
 add_action('wp_enqueue_scripts', 'my_theme_enqueue_styles');
 add_action('wp_enqueue_scripts', 'dang_news_assets');
