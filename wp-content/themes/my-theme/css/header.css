@@ -1,0 +1,423 @@
+/* =========================
+   HEADER
+========================= */
+
+.site-header {
+    width: 100%;
+    height: 68px;
+
+    display: flex;
+    align-items: center;
+
+    background: #ffffff;
+
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.header-logo {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 18px;
+
+    background: #ffffff;
+
+    border-right: 1px solid #eeeeee;
+}
+
+.header-logo a {
+    color: #666666;
+
+    text-decoration: none;
+
+    font-size: 17px;
+    font-weight: 400;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.header-home {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 15px;
+
+    background: #f1f1f1;
+
+    color: #444444;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.header-home:hover {
+    background: #e9e9e9;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.header-search {
+    margin-left: 16px;
+}
+
+.header-search form {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header-search input {
+    width: 210px;
+    height: 34px;
+
+    padding: 0 12px;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    outline: none;
+
+    font-size: 14px;
+}
+
+.header-search input:focus {
+    border-color: #999999;
+}
+
+.header-search button {
+    height: 34px;
+
+    padding: 0 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+
+    color: #333333;
+
+    font-size: 14px;
+
+    cursor: pointer;
+}
+
+.header-search button:hover {
+    background: #f5f5f5;
+}
+
+
+/* =========================
+   MAIN MENU
+========================= */
+
+.main-menu {
+    margin-left: auto;
+
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 34px;
+}
+
+.main-menu a {
+    color: #555555;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+.main-menu a:hover {
+    color: #222222;
+}
+
+
+/* =========================
+   RIGHT ACTIONS
+========================= */
+
+.header-actions {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    margin-left: 50px;
+}
+
+
+/* =========================
+   ACTION ITEM
+========================= */
+
+.header-action {
+    width: 62px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #555555;
+
+    cursor: pointer;
+}
+
+.header-action small {
+    margin-top: 3px;
+
+    font-size: 9px;
+    color: #777777;
+}
+
+
+/* =========================
+   THREE DOTS
+========================= */
+
+.dots {
+    height: 17px;
+
+    font-size: 20px;
+    line-height: 10px;
+
+    letter-spacing: 1px;
+
+    color: #111111;
+}
+
+
+/* =========================
+   SEARCH ICON
+========================= */
+
+.search-icon {
+    position: relative;
+
+    display: block;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #222222;
+    border-radius: 50%;
+}
+
+.search-icon::after {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 2px;
+
+    background: #222222;
+
+    right: -5px;
+    bottom: -2px;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================
+   ACCOUNT
+========================= */
+
+.header-account {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 0 15px 0 8px;
+
+    cursor: pointer;
+}
+
+
+/* Account circle */
+
+.account-icon {
+    position: relative;
+
+    display: block;
+
+    width: 25px;
+    height: 25px;
+
+    border: 2px solid #777777;
+
+    border-radius: 50%;
+}
+
+
+/* Head */
+
+.account-icon::before {
+    content: "";
+
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    top: 4px;
+    left: 7px;
+
+    background: #777777;
+
+    border-radius: 50%;
+}
+
+
+/* Body */
+
+.account-icon span {
+    position: absolute;
+
+    width: 13px;
+    height: 7px;
+
+    left: 4px;
+    bottom: 3px;
+
+    background: #777777;
+
+    border-radius: 8px 8px 5px 5px;
+}
+
+
+/* Account text */
+
+.account-text {
+    display: flex;
+    align-items: center;
+
+    gap: 4px;
+
+    color: #666666;
+
+    font-size: 13px;
+}
+
+.arrow {
+    font-size: 9px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .main-menu {
+        gap: 15px;
+    }
+
+    .header-actions {
+        margin-left: 15px;
+    }
+
+    .header-search input {
+        width: 150px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .main-menu {
+        display: none;
+    }
+
+    .header-search {
+        margin-left: 10px;
+    }
+
+    .header-search input {
+        width: 130px;
+    }
+
+}
+
+/* Account */
+.header-account {
+    position: relative;
+}
+
+.account-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    padding: 8px;
+}
+
+/* Dropdown */
+.account-dropdown {
+    position: absolute;
+    top: calc(100% + 10px);
+    right: 0;
+
+    width: 160px;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+    display: none;
+    z-index: 999;
+}
+
+/* Hiện dropdown khi hover */
+.header-account:hover .account-dropdown {
+    display: block;
+}
+
+.account-dropdown a {
+    display: block;
+
+    padding: 12px 16px;
+
+    color: #222;
+    text-decoration: none;
+}
+
+.account-dropdown a:hover {
+    background: #f5f5f5;
+}
