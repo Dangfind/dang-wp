@@ -14,13 +14,6 @@
 
     <header class="site-header">
 
-        <!-- Logo -->
-        <div class="header-logo">
-            <a href="<?php echo esc_url(home_url('/')); ?>">
-                Group C
-            </a>
-        </div>
-
         <!-- Home -->
         <a class="header-home" href="<?php echo esc_url(home_url('/')); ?>">
             Home

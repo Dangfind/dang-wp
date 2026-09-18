@@ -3,21 +3,25 @@
 ========================= */
 
 .site-header {
-    width: 100%;
-    height: 68px;
 
-    display: flex;
-    align-items: center;
+    width:100%;
+    height:68px;
 
-    background: #ffffff;
+    display:flex;
+    align-items:center;
 
-    border: 1px solid #e5e5e5;
-    border-radius: 3px;
+    overflow:hidden;
 
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+    background:#ffffff;
 
-    font-family: Arial, Helvetica, sans-serif;
+    border:1px solid #e5e5e5;
+    border-radius:3px;
+
+    box-shadow:0 1px 3px rgba(0,0,0,0.08);
+
+    font-family:Arial, Helvetica, sans-serif;
 }
+
 
 
 /* =========================
@@ -25,26 +29,31 @@
 ========================= */
 
 .header-logo {
-    height: 100%;
 
-    display: flex;
-    align-items: center;
+    height:100%;
 
-    padding: 0 18px;
+    display:flex;
+    align-items:center;
 
-    background: #ffffff;
+    padding:0 18px;
 
-    border-right: 1px solid #eeeeee;
+    border-right:1px solid #eeeeee;
+
+    flex-shrink:0;
+
 }
+
 
 .header-logo a {
-    color: #666666;
 
-    text-decoration: none;
+    color:#666;
 
-    font-size: 17px;
-    font-weight: 400;
+    text-decoration:none;
+
+    font-size:17px;
+
 }
+
 
 
 /* =========================
@@ -52,25 +61,34 @@
 ========================= */
 
 .header-home {
-    height: 100%;
 
-    display: flex;
-    align-items: center;
+    height:100%;
 
-    padding: 0 15px;
+    display:flex;
+    align-items:center;
 
-    background: #f1f1f1;
+    padding:0 15px;
 
-    color: #444444;
+    background:#f1f1f1;
 
-    text-decoration: none;
+    color:#444;
 
-    font-size: 14px;
+    text-decoration:none;
+
+    font-size:14px;
+
+    flex-shrink:0;
+
 }
+
 
 .header-home:hover {
-    background: #e9e9e9;
+
+    background:#e9e9e9;
+
 }
+
+
 
 
 /* =========================
@@ -78,346 +96,557 @@
 ========================= */
 
 .header-search {
-    margin-left: 16px;
+
+    margin-left:16px;
+
+    flex-shrink:0;
+
 }
+
 
 .header-search form {
-    display: flex;
-    align-items: center;
-    gap: 5px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:5px;
+
 }
+
+
 
 .header-search input {
-    width: 210px;
-    height: 34px;
 
-    padding: 0 12px;
+    width:180px;
 
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+    height:34px;
 
-    outline: none;
+    padding:0 12px;
 
-    font-size: 14px;
+    border:1px solid #ccc;
+
+    border-radius:4px;
+
+    outline:none;
+
+    font-size:14px;
+
 }
+
+
 
 .header-search input:focus {
-    border-color: #999999;
+
+    border-color:#999;
+
 }
+
+
 
 .header-search button {
-    height: 34px;
 
-    padding: 0 14px;
+    height:34px;
 
-    background: #ffffff;
+    padding:0 14px;
 
-    border: 1px solid #cccccc;
-    border-radius: 4px;
+    background:white;
 
-    color: #333333;
+    border:1px solid #ccc;
 
-    font-size: 14px;
+    border-radius:4px;
 
-    cursor: pointer;
+    color:#333;
+
+    cursor:pointer;
+
 }
+
 
 .header-search button:hover {
-    background: #f5f5f5;
+
+    background:#f5f5f5;
+
 }
+
 
 
 /* =========================
-   MAIN MENU
+   CATEGORY MENU
 ========================= */
 
 .main-menu {
-    margin-left: auto;
 
-    height: 100%;
+    flex:1;
 
-    display: flex;
-    align-items: center;
+    min-width:0;
 
-    gap: 34px;
+    height:100%;
+
+
+    display:flex;
+
+    align-items:center;
+
+
+    gap:25px;
+
+    padding-left:25px;
+
+
+    overflow-x:auto;
+
 }
+
+
+
+.main-menu::-webkit-scrollbar {
+
+    display:none;
+
+}
+
+
 
 .main-menu a {
-    color: #555555;
 
-    text-decoration: none;
+    flex-shrink:0;
 
-    font-size: 14px;
+    white-space:nowrap;
+
+
+    color:#555;
+
+    text-decoration:none;
+
+    font-size:14px;
+
 }
+
+
 
 .main-menu a:hover {
-    color: #222222;
+
+    color:#222;
+
 }
+
+
 
 
 /* =========================
    RIGHT ACTIONS
 ========================= */
 
+
 .header-actions {
-    height: 100%;
 
-    display: flex;
-    align-items: center;
+    height:100%;
 
-    margin-left: 50px;
+    display:flex;
+
+    align-items:center;
+
+
+    margin-left:10px;
+
+    flex-shrink:0;
+
 }
+
 
 
 /* =========================
    ACTION ITEM
 ========================= */
 
+
 .header-action {
-    width: 62px;
-    height: 100%;
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width:62px;
 
-    color: #555555;
+    height:100%;
 
-    cursor: pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+
+    color:#555;
+
+    cursor:pointer;
+
 }
+
+
 
 .header-action small {
-    margin-top: 3px;
 
-    font-size: 9px;
-    color: #777777;
+    margin-top:3px;
+
+    font-size:9px;
+
+    color:#777;
+
 }
+
 
 
 /* =========================
-   THREE DOTS
+   DOTS
 ========================= */
 
+
 .dots {
-    height: 17px;
 
-    font-size: 20px;
-    line-height: 10px;
+    height:17px;
 
-    letter-spacing: 1px;
+    font-size:20px;
 
-    color: #111111;
+    line-height:10px;
+
+    letter-spacing:1px;
+
+    color:#111;
+
 }
+
 
 
 /* =========================
    SEARCH ICON
 ========================= */
 
+
 .search-icon {
-    position: relative;
 
-    display: block;
+    position:relative;
 
-    width: 17px;
-    height: 17px;
+    display:block;
 
-    border: 2px solid #222222;
-    border-radius: 50%;
+
+    width:17px;
+
+    height:17px;
+
+
+    border:2px solid #222;
+
+    border-radius:50%;
+
 }
+
+
 
 .search-icon::after {
-    content: "";
 
-    position: absolute;
+    content:"";
 
-    width: 7px;
-    height: 2px;
 
-    background: #222222;
+    position:absolute;
 
-    right: -5px;
-    bottom: -2px;
 
-    transform: rotate(45deg);
+    width:7px;
+
+    height:2px;
+
+
+    background:#222;
+
+
+    right:-5px;
+
+    bottom:-2px;
+
+
+    transform:rotate(45deg);
+
 }
+
+
 
 
 /* =========================
    ACCOUNT
 ========================= */
 
+
 .header-account {
-    height: 100%;
 
-    display: flex;
-    align-items: center;
+    height:100%;
 
-    gap: 7px;
 
-    padding: 0 15px 0 8px;
+    display:flex;
 
-    cursor: pointer;
+    align-items:center;
+
+
+    position:relative;
+
+
+    padding:0 15px 0 8px;
+
+
+    flex-shrink:0;
+
 }
 
 
-/* Account circle */
+
+.account-button {
+
+
+    display:flex;
+
+    align-items:center;
+
+
+    gap:8px;
+
+
+    background:none;
+
+    border:none;
+
+
+    cursor:pointer;
+
+
+    padding:8px;
+
+}
+
+
+
+/* icon */
+
 
 .account-icon {
-    position: relative;
 
-    display: block;
 
-    width: 25px;
-    height: 25px;
+    position:relative;
 
-    border: 2px solid #777777;
 
-    border-radius: 50%;
+    width:25px;
+
+    height:25px;
+
+
+    border:2px solid #777;
+
+
+    border-radius:50%;
+
+
 }
 
 
-/* Head */
 
 .account-icon::before {
-    content: "";
 
-    position: absolute;
 
-    width: 7px;
-    height: 7px;
+    content:"";
 
-    top: 4px;
-    left: 7px;
 
-    background: #777777;
+    position:absolute;
 
-    border-radius: 50%;
+
+    width:7px;
+
+    height:7px;
+
+
+    top:4px;
+
+    left:7px;
+
+
+    background:#777;
+
+
+    border-radius:50%;
+
+
 }
 
 
-/* Body */
 
 .account-icon span {
-    position: absolute;
 
-    width: 13px;
-    height: 7px;
 
-    left: 4px;
-    bottom: 3px;
+    position:absolute;
 
-    background: #777777;
 
-    border-radius: 8px 8px 5px 5px;
+    width:13px;
+
+    height:7px;
+
+
+    left:4px;
+
+    bottom:3px;
+
+
+    background:#777;
+
+
+    border-radius:8px 8px 5px 5px;
+
+
 }
 
 
-/* Account text */
+
 
 .account-text {
-    display: flex;
-    align-items: center;
 
-    gap: 4px;
 
-    color: #666666;
+    display:flex;
 
-    font-size: 13px;
+
+    align-items:center;
+
+
+    gap:4px;
+
+
+    color:#666;
+
+
+    font-size:13px;
+
+
 }
+
 
 .arrow {
-    font-size: 9px;
+
+    font-size:9px;
+
 }
+
+
+
+/* =========================
+   DROPDOWN
+========================= */
+
+
+.account-dropdown {
+
+
+    position:absolute;
+
+
+    top:calc(100% + 10px);
+
+
+    right:0;
+
+
+    width:160px;
+
+
+    background:white;
+
+
+    border:1px solid #ddd;
+
+
+    border-radius:8px;
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+
+    display:none;
+
+
+    z-index:999;
+
+}
+
+
+
+.header-account:hover .account-dropdown {
+
+
+    display:block;
+
+
+}
+
+
+
+.account-dropdown a {
+
+
+    display:block;
+
+
+    padding:12px 16px;
+
+
+    color:#222;
+
+
+    text-decoration:none;
+
+
+}
+
+
+
+.account-dropdown a:hover {
+
+
+    background:#f5f5f5;
+
+
+}
+
+
 
 
 /* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 900px) {
 
-    .main-menu {
-        gap: 15px;
-    }
+@media(max-width:900px){
 
-    .header-actions {
-        margin-left: 15px;
-    }
 
     .header-search input {
-        width: 150px;
+
+        width:130px;
+
     }
 
-}
-
-
-@media (max-width: 700px) {
 
     .main-menu {
-        display: none;
+
+        gap:15px;
+
     }
 
-    .header-search {
-        margin-left: 10px;
+
+}
+
+
+
+@media(max-width:700px){
+
+
+    .main-menu {
+
+        display:none;
+
     }
 
-    .header-search input {
-        width: 130px;
-    }
 
-}
-
-/* Account */
-.header-account {
-    position: relative;
-}
-
-.account-button {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-
-    background: none;
-    border: none;
-    cursor: pointer;
-
-    padding: 8px;
-}
-
-/* Dropdown */
-.account-dropdown {
-    position: absolute;
-    top: calc(100% + 10px);
-    right: 0;
-
-    width: 160px;
-
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
-
-    display: none;
-    z-index: 999;
-}
-
-/* Hiện dropdown khi hover */
-.header-account:hover .account-dropdown {
-    display: block;
-}
-
-.account-dropdown a {
-    display: block;
-
-    padding: 12px 16px;
-
-    color: #222;
-    text-decoration: none;
-}
-
-.account-dropdown a:hover {
-    background: #f5f5f5;
 }
