@@ -42,16 +42,23 @@
 
             <?php
 
+            $parent = get_category_by_slug('the-thao');
+
+
             $categories = get_categories([
-                'hide_empty' => true,
+                'hide_empty' => false,
+                'parent' => $parent->term_id
             ]);
+
 
             foreach ($categories as $category) :
 
             ?>
 
-                <a href="<?php echo get_category_link($category->term_id); ?>">
-                    <?php echo $category->name; ?>
+                <a href="<?php echo esc_url(get_category_link($category->term_id)); ?>">
+
+                    <?php echo esc_html($category->name); ?>
+
                 </a>
 
             <?php endforeach; ?>
