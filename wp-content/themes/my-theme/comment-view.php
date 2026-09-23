@@ -1,90 +1,121 @@
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+<div class="comment-module">
 
-<div class="container">
 
-    <div class="row">
+    <!-- =========================
+         COMMENT 1
+    ========================== -->
 
-        <!-- Comment bên phải -->
-        <div class="col-md-4 col-md-offset-8">
+    <div class="d-flex mb-3">
 
-            <div class="media comment-box">
+        <!-- Avatar -->
 
-                <div class="media-left">
-                    <a href="#">
-                        <img
-                            class="img-responsive user-photo"
-                            src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                    </a>
-                </div>
+        <div class="flex-shrink-0 me-2">
 
-                <div class="media-body">
+            <img
+                src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                width="50"
+                height="50"
+                class="img-fluid"
+                alt="admin">
 
-                    <h4 class="media-heading">
-                        admin
-                    </h4>
+        </div>
 
-                    <p>
-                        hay
-                    </p>
 
-                    <!-- Reply -->
-                    <div class="media">
+        <!-- Nội dung -->
 
-                        <div class="media-left">
-                            <a href="#">
-                                <img
-                                    class="img-responsive user-photo"
-                                    src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                            </a>
-                        </div>
+        <div class="flex-grow-1">
 
-                        <div class="media-body">
+            <h5 class="mb-1">
+                admin
+            </h5>
 
-                            <h4 class="media-heading">
-                                admin
-                            </h4>
-
-                            <p>
-                                Lorem Ipsum is simply dummy text
-                                of the printing and typesetting industry.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <!-- Comment khác -->
-                    <div class="media">
-
-                        <div class="media-left">
-                            <a href="#">
-                                <img
-                                    class="img-responsive user-photo"
-                                    src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
-                            </a>
-                        </div>
-
-                        <div class="media-body">
-
-                            <h4 class="media-heading">
-                                admin
-                            </h4>
-
-                            <p>
-                                Lorem Ipsum is simply dummy text
-                                of the printing and typesetting industry.
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
+            <p class="mb-0">
+                hay
+            </p>
 
         </div>
 
     </div>
+
+
+    <!-- =========================
+         COMMENT 2
+    ========================== -->
+
+    <div class="d-flex mb-3 ms-4">
+
+        <!-- Avatar -->
+
+        <div class="flex-shrink-0 me-2">
+
+            <img
+                src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                width="50"
+                height="50"
+                class="img-fluid"
+                alt="admin">
+
+        </div>
+
+
+        <!-- Nội dung -->
+
+        <div class="flex-grow-1">
+
+            <h5 class="mb-1">
+                admin
+            </h5>
+
+            <p class="mb-0">
+
+                Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry.
+
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- =========================
+         COMMENT 3
+    ========================== -->
+
+    <div class="d-flex mb-3 ms-4">
+
+        <!-- Avatar -->
+
+        <div class="flex-shrink-0 me-2">
+
+            <img
+                src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png"
+                width="50"
+                height="50"
+                class="img-fluid"
+                alt="admin">
+
+        </div>
+
+
+        <!-- Nội dung -->
+
+        <div class="flex-grow-1">
+
+            <h5 class="mb-1">
+                admin
+            </h5>
+
+            <p class="mb-0">
+
+                Lorem Ipsum is simply dummy text
+                of the printing and typesetting industry.
+
+            </p>
+
+        </div>
+
+    </div>
+
 
 </div>
