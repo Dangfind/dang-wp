@@ -41,14 +41,83 @@ add_action(
 );
 
 
+/*
+|--------------------------------------------------------------------------
+| Theme setup
+|--------------------------------------------------------------------------
+*/
+
 function my_theme_setup()
 {
     register_nav_menus([
         'primary' => 'Main Menu'
     ]);
+
+    // Cho phép Featured Image
+    add_theme_support('post-thumbnails');
 }
 
 add_action(
     'after_setup_theme',
     'my_theme_setup'
+);
+
+
+/*
+|--------------------------------------------------------------------------
+| Search Filter
+|--------------------------------------------------------------------------
+*/
+
+function my_search_filter($query)
+{
+    // Chỉ xử lý query chính ngoài trang Admin
+    if (
+        !is_admin() &&
+        $query->is_main_query() &&
+        $query->is_search()
+    ) {
+
+        /*
+        |--------------------------------------------------------------------------
+        | Sort
+        |--------------------------------------------------------------------------
+        */
+
+        if (!empty($_GET['sort'])) {
+
+            $sort = sanitize_text_field(
+                wp_unslash($_GET['sort'])
+            );
+
+            // Cũ nhất
+            if ($sort === 'oldest') {
+
+                $query->set('orderby', 'date');
+                $query->set('order', 'ASC');
+            }
+            // Mới nhất
+            else {
+
+                $query->set('orderby', 'date');
+                $query->set('order', 'DESC');
+            }
+        }
+
+        /*
+        |--------------------------------------------------------------------------
+        | Số bài viết mỗi trang
+        |--------------------------------------------------------------------------
+        */
+
+        $query->set(
+            'posts_per_page',
+            6
+        );
+    }
+}
+
+add_action(
+    'pre_get_posts',
+    'my_search_filter'
 );
